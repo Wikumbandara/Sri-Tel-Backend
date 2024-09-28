@@ -1,0 +1,47 @@
+server:
+  port: 8080  # Gateway will run on this port
+
+spring:
+  cloud:
+    config:
+      enabled: false
+    gateway:
+      routes:
+        # Route for user-service
+        - id: user-service
+          uri: http://localhost:8081
+          predicates:
+            - Path=/api/users/**
+
+        # Route for provisioning-service
+        - id: provisioning-service
+          uri: http://localhost:8082
+          predicates:
+            - Path=/api/provision/**
+
+        # Route for billing-service
+        - id: billing-service
+          uri: http://localhost:8083
+          predicates:
+            - Path=/api/billing/**
+
+        # Route for notification-service
+        - id: notification-service
+          uri: http://localhost:8084
+          predicates:
+            - Path=/api/notifications/**
+
+        # Route for payment-service
+        - id: payment-service
+          uri: http://localhost:8085
+          predicates:
+            - Path=/api/payments/**
+
+  application:
+    name: api-gateway
+
+# Disable Eureka client settings
+eureka:
+  client:
+    enabled: false  # Disable Eureka client
+
