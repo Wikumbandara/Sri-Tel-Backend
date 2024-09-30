@@ -1,4 +1,4 @@
-package com.stl.provisioning;
+package com.stl.provisioning.service;
 
 import com.stl.provisioning.entity.TelcoService;
 import com.stl.provisioning.repository.TelcoServiceRepository;

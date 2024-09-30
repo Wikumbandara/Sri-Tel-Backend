@@ -2,7 +2,7 @@ package com.stl.provisioning.service;
 
 import com.stl.provisioning.entity.Provisioning;
 import com.stl.provisioning.entity.TelcoService;
-import com.stl.provisioning.entity.User;
+import com.stl.user.entity.User;
 import com.stl.provisioning.repository.ProvisioningRepository;
 import com.stl.provisioning.repository.TelcoServiceRepository;
 import org.springframework.beans.factory.annotation.Autowired;

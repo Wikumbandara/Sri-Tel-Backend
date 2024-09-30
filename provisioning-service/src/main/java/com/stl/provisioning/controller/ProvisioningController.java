@@ -2,7 +2,6 @@ package com.stl.provisioning.controller;
 
 
 import com.stl.provisioning.dto.ProvisioningDTO;
-import com.stl.provisioning.dto.UserDTO;
 import com.stl.provisioning.entity.Provisioning;
 import com.stl.provisioning.entity.TelcoService;
 import com.stl.provisioning.service.ProvisioningService;
@@ -10,7 +9,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.Collections;
 import java.util.Optional;
 
 
